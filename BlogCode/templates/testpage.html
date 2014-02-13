@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+
+   {% for post in entries %}
+      <div class="entry">
+        <label>
+          TITLE
+          <pre class="blog-title">{{post.blog_title}}</pre>
+        </label>
+        
+        <label>
+          ENTRY
+          <pre class="blog-body">{{post.blog_entry}}</pre>
+        </label>
+        
+        <label>
+          DATE
+          <pre class="blog-body">{{post.created}}</pre>
+        </label>
+        
+        <label>
+          ID
+          <pre class="post-id">{{post.key().id()}}</pre>
+        </label>
+
+        <label>
+          ID
+          <pre class="post-id">{{post.blog_user_name}}</pre>
+        </label>
+      </div>
+      <hr>
+    {% endfor %}
+     
+   {% for user in entries %}
+      <div class="entry">
+        <label>
+          USER
+          <pre class="blog-title">{{user.db_user_name}}</pre>
+        </label>
+        
+        <label>
+          PASS
+          <pre class="blog-body">{{user.db_user_pass}}</pre>
+        </label>
+        
+        <label>
+          EMAIL
+          <pre class="blog-body">{{user.db_user_email}}</pre>
+        </label>
+        
+        <label>
+          DATE
+          <pre class="blog-body">{{user.db_date_created}}</pre>
+        </label>
+        
+        <label>
+          ID
+          <pre class="post-id">{{user.key().id()}}</pre>
+      </div>
+      <hr>
+    {% endfor %}
+
+
+<html>

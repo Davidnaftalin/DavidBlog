@@ -1,0 +1,18 @@
+{% extends "base.html" %} 
+
+
+{% block content %}
+
+      <div class="page-header">
+        <h3 class="blog-title">{{p.blog_title}} | 
+          <span class="post-date">| {{p.created}}</span>
+        </h3>  
+      </div>
+
+      <p class="blog-entry">
+      {{p.blog_entry}}
+      </p>   
+
+{% endblock %}
+
+

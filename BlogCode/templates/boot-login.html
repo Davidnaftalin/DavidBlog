@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+{% block page %}<span class="current-page-head">Login</span>{% endblock %} 
+
+{% block content %}
+
+<form role="form" method="post">
+  
+  <div class="form-group">
+    <label for="user-name">Username</label>
+    <input type="text" name = "username" class="form-control" id="user-name" placeholder={{login_error}}>
+  </div>
+  
+  <div class="form-group">
+    <label for="pass_word">Password</label>
+    <input type="password" name="password" class="form-control" id="pass_word">
+  </div>
+  
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+{% endblock %}

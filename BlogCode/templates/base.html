@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <pre>{{login_name}}{{submit_error}}<a href="/blog/logout">{{logout}}</a></pre>
+  
+
+  <title>David's Blog </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+  
+    <!-- Custom theme -->
+    <link rel="stylesheet" type="text/css" href="/static/stylesheet.css">
+
+</head>
+
+  <body role="document">    
+  <div class="container theme-showcase" role="main">
+
+      <div class="jumbotron">
+        <h1 class="custom-h1">Dave's Blog{% block page %}{% endblock %}</h1>
+        <p>its a wonderful thing!</p>
+        <p>
+          <a href="/blog" class="custom-nav-first">Home</a>|
+          <a href="/blog/login" class="custom-nav">Login</a>|
+          <a href="/blog/signup" class="custom-nav">Register</a>|
+          <a href="/blog/newpost" class="custom-nav">Submit</a>  
+      </div>
+     
+   </div>
+    
+    
+   <div class ="container theme-showcase">  
+      {% block content %}
+      {% endblock %}
+   </div>  
+    
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
+    <!-- JQuery Application -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="/static/application.js"></script>
+  </body>
+</html>

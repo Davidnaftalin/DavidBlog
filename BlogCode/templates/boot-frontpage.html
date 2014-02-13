@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+{% block page %}<span class="current-page-head">Home</span>{% endblock %}    
+
+{% block content %}
+
+{% for post in entries %}
+  <div>
+
+    <h3 class = "blog-title">
+      <span class="post-date">{{post.blog_user_name}} | {{post.created}}</span>
+      <a href = '/blog/{{(post.key().id())}}'>{{post.blog_title}}</a> | <a href="#" class="title-show-button">read more...</a>
+    </h3>
+    
+      
+    <p class = "blog-text">
+      {{post.blog_entry}}
+    </p>
+
+  </div>
+
+  <hr>
+{% endfor %}
+
+
+{% endblock %}

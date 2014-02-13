@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+{% block page %}<span class="current-page-head">Register</span>{% endblock %}   
+
+{% block content %}
+
+<form role="form" method="post">
+  
+  <div class="form-group">
+    <label for="user-name">Username</label>
+    <input type="text" name = "username" class="form-control" id="user-name" placeholder={{user_error}}{{user_exist_error}}>
+  </div>
+  
+  <div class="form-group">
+    <label for="pass_word">Password</label>
+    <input type="password" name="password" class="form-control" id="pass_word" placeholder={{pass_error}}>
+  </div>
+  
+  <div class="form-group">
+    <label for="verify">Verify Password</label>
+    <input type="password" name="verify" id="verify" class="form-control" placeholder={{verify_error}}>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" class="form-control" placeholder={{email_error}}> 
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+{% endblock %}

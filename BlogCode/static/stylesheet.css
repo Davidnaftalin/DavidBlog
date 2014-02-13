@@ -1,0 +1,37 @@
+.custom-nav{
+  padding-right:35px;
+  padding-left:35px;
+}
+.custom-nav-first{
+  padding-right:35px;
+}
+    
+.custom-h1 {
+  font-family:"HelveticaNeue-Light";
+}
+.jumbotron {
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.post-date{
+  float:right; 
+}
+
+.blog-title{
+ color:#76767A;
+ font-family:"HelveticaNeue-Light";
+}
+
+.current-page-head{
+  color:white;
+  float:right;
+}
+
+.subject-box{
+  width:550px;
+}
+
+.blog-text{
+  display:none;
+}
