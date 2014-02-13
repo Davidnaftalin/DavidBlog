@@ -6,4 +6,10 @@ $(document).ready(function(){
       $(this).parent().siblings(".blog-text").slideToggle("fast");
   });
 
+	$.ajax({
+      url: "http://amcrowcroft.appspot.com/blog.json",
+      success: function( data ) {
+        $( "#alice-blog" ).html('hello dave');
+        }
+	});
 });
